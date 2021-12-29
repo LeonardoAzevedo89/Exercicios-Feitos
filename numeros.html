@@ -1,0 +1,29 @@
+<script> 
+    var numeros = [];
+    var ordenar = function(n1,n2){return n1 - n2;}
+    var i = 0;
+
+    var entrada;
+
+    do
+    {
+      entrada = (parseInt(prompt("Entre com um numero e (-1 para sair)")));
+      if(entrada >= 0) 
+      numeros[i++] = entrada;
+
+    } while(entrada >= 0);
+
+var resultado = "Numeros ainda nao ordenados";
+var numeros2 = numeros.sort(ordenar);
+var total = i;
+i=0;
+while(i < total){ /*percorrendo o array*/
+    
+    resultado = resultado + numeros[i++];
+    if (i < total){
+      resultado = resultado + ",";
+    }
+
+}
+alert(resultado);
+</script>

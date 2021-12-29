@@ -1,0 +1,50 @@
+#Resultado{
+    background-color: beige;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    display: block;
+
+}
+
+#num1, #num2, #num3{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table{
+    border: 0px;
+    padding-top: 10%;
+}
+
+.formlogon{
+    align-self: center;
+}
+
+.Divcentral{
+    margin-left: auto;
+    margin-top: 15%;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    border:5px solid #252222;
+    overflow: auto;  /*scroll barra de rolagem*/
+    display:block;
+    background-color: burlywood;  
+    border-radius: 50px;
+
+}
+
+
+
+
+#usererro,#senhaerro {
+    display:none;
+    color:red;
+   font-size: 12px;
+   font-weight: bold;
+}

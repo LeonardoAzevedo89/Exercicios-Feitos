@@ -1,0 +1,24 @@
+<script>
+
+var dados = {
+altura: "" ,
+massa : "" 
+};
+var imc;
+
+dados.altura = prompt("Informe sua ltura");
+dados.massa = prompt("informe seu peso");
+
+imc = dados.massa / (dados.altura*dados.altura);
+ 
+if (imc > 30){
+alert("Seu imc e " + imc + " Voce e considerado obeso");
+}
+else if( imc < 20){
+alert("Seu imc e normal " + imc);
+} 
+else {
+    document.write("Seu imc e " + imc);
+}
+
+</script>

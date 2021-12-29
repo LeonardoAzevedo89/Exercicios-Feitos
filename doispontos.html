@@ -1,0 +1,51 @@
+<script>
+ var posicao1 ={x:Math.floor(Math.random()*10) , y:Math.floor(Math.random()*10) , z:Math.floor(Math.random()*10)}
+ var posicao2 ={x:Math.floor(Math.random()*10) , y:Math.floor(Math.random()*10) , z:Math.floor(Math.random()*10)}
+
+ var posicao_entrada1 ={x:1 , y:1 , z:1};
+ var posicao_entrada2 ={x:1 , y:1 , z:1};
+
+ var ponto1 = 2;
+ var ponto2 = 2;
+ var contador = 1;
+ 
+
+ do{
+ posicao_entrada1.x = prompt("Entre com o valor de x ponto 1");
+ posicao_entrada1.y = prompt("Entre com o valor de y ponto 1");
+ posicao_entrada1.z = prompt("Entre com o valor de z ponto 1");
+
+ ponto1 = Math.sqrt((posicao_entrada1.x - posicao1.x) * (posicao_entrada1.x - posicao1.x) + (posicao_entrada1.y - posicao1.y) * (posicao_entrada1.y - posicao1.y) +  (posicao_entrada1.z - posicao1.z) * (posicao_entrada1.z - posicao1.z));
+
+ posicao_entrada2.x = prompt("Entre com o valor de x ponto 2");
+ posicao_entrada2.y = prompt("Entre com o valor de y ponto 2");
+ posicao_entrada2.z = prompt("Entre com o valor de z ponto 2");
+ 
+ ponto2 = Math.sqrt((posicao_entrada2.x - posicao2.x) * (posicao_entrada2.x - posicao2.x) + (posicao_entrada2.y - posicao2.y) * (posicao_entrada2.y - posicao2.y) +  (posicao_entrada2.z - posicao2.z) * (posicao_entrada2.z - posicao2.z));
+ 
+ alert("Distancia do ponto 1 ficou em " + ponto1);
+  if (posicao_entrada1.x == posicao1.x)
+    alert("Voce acertou o numero de X");
+  if (posicao_entrada1.y == posicao1.y)
+    alert("Voce acertou o numero de Y");
+  if (posicao_entrada1.z == posicao1.z)
+    alert("Voce acertou o numero de Z");
+    
+ alert("Distancia do ponto 2 ficou em " + ponto2);
+ if (posicao_entrada2.x == posicao2.x)
+    alert("Voce acertou o numero de X");
+ if (posicao_entrada2.y == posicao2.y)
+    alert("Voce acertou o numero de Y");
+ if (posicao_entrada2.z == posicao2.z)
+    alert("Voce acertou o numero de Z");
+ 
+ alert("Esta e a tentativa " + contador);
+ contador++;
+
+}while((ponto2 > 1) || (ponto1 > 1 ) && (contador < 10))
+    alert("Voce Achou a Distancia de " + ponto1 + " e " + ponto2);
+
+ 
+</script>
+
+

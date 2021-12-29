@@ -1,0 +1,99 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="style.css">
+
+       <script>
+           //let variavel1 = 0;  usar let deixa apenas usar uma vez a variavel
+         //  var variavel1= 0; // posso usar em outro campo do projeto a mesma variavel modificando o tipo
+          // var variavel1= "texto";
+            function somar(){
+                var v1= Number(document.getElementById('v1').value);
+                var v2= Number(document.getElementById('v2').value);
+                var resultado = v1+ v2;
+                document.getElementById('resultado').value = resultado;
+
+                alert('O resultado foi o '+ resultado);
+                console.log('O Resultado foi ' + resultado);
+            }
+
+            function Somar(){
+                var v1= Number(document.getElementById('v1').value);
+                var v2= Number(document.getElementById('v2').value);
+                var resultado = v1+ v2;
+                document.getElementById('result').innerHTML = resultado;
+
+                console.log('O Resultado foi ' + resultado);
+            }
+
+            function criartabela(){
+                var linhas= Number(document.getElementById('linhas').value);
+                var colunas= Number(document.getElementById('colunas').value);
+                var tabela = "<table border = 1>"
+                for(var i=0; i<linhas; i=i+1) //ou i++
+                {
+                    console.log(i);
+                    tabela= tabela + "<tr>"
+                        for (var j=0; j < colunas ; j++)
+                        {
+                            tabela= tabela + "<td>linha: " + i + "coluna: " + j +  "</td>"
+                        }
+                        tabela= tabela + "</tr>"
+                }
+                tabela = tabela + "</table>"
+               // console.log(tabela); visualizar o que acontece no navegador
+                document.getElementById('tabela').innerHTML = tabela;
+            }
+
+         </script>
+    </head>                            
+    <body>
+        <div>
+           <form>
+               <table border="0">
+                <tr>
+                <td align='right'>Valor1</td>
+                   <td><input type="text" name='v1' id='v1' placeholder="Digite um Número"></td>
+               </tr>
+               <tr>
+                <td align='right'>Valor2</td>
+                   <td><input type="text" name='v2' id='v2' placeholder="Digite um Número"></td>
+               </tr>
+
+               <tr>
+                <td></td>
+                   <td><input onclick="somar()" type="button" value="somar"></td>
+               </tr>
+
+               <tr>
+                <td><p id='result' onclick="Somar()">Resultado</p></td>
+                   <td><input type="text" name='resultado' id='resultado'></td>
+               </tr>
+                </table>
+           </form>
+
+           <form>
+            <table border="0">
+                <tr>
+                <td align='right'>Linhas</td>
+                    <td><input type="text" name='linhas' id='linhas' placeholder="Digite um Número"></td>
+                </tr>
+                <tr>
+                <td align='right'>Colunas</td>
+                    <td><input type="text" name='colunas' id='colunas' placeholder="Digite um Número"></td>
+                </tr>
+
+                <tr>
+                <td></td>
+                    <td><input onclick="criartabela()" type="button" value="Criar"></td>
+                </tr>
+
+            </table>
+        </form>
+        <center>
+           <span id='tabela'></span>
+        </center>
+        </div>
+    </body>
+
+
+</html>

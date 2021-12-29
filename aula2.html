@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="aula2.js"></script>
+
+	<title>Aula HTML/JS/CSS</title>
+
+  </head>
+
+<body>
+<div class="Divcentral">
+	<center>
+<form onsubmit="validar()" id="formlogon" name="formlogon" class="formlogon">
+	<table>
+  <tbody>
+    <tr>
+      <td colspan="2">&nbsp;Logon do Sistema</td>
+      
+    </tr>
+    <tr>
+      <td>&nbsp;Usuário</td>
+      <td>
+        <input type="text" name="user" id="user">
+		<label id="usererro">&nbsp; Algo escrito </label>
+		</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Senha</td>
+      <td>
+        <input type="password" name="senha" id="senha">
+		<label id="senhaerro">&nbsp;Algo escrito</label>
+		  </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">
+		  <input type="button" name="limpar" id="limpar" onclick="alert ('clicou em limpar')" value="Limpar">
+		  <input type="button" name="logon" id="logon" onclick="validar()" value="OK">		
+	  </td>
+      
+    </tr>
+  </tbody>
+</table>
+	</form>
+	
+	<br>
+		<div id="Resultado">
+		
+		</div>
+	
+	</center>
+	
+	</div>
+</body>
+</html>

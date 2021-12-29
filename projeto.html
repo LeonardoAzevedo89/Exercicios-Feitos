@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <meta charset="utf-8">
+        <link rel="stylesheet" href="style1.css">
+        <script src="projetojs.js"> </script>
+        <title>Rosabelly Pedido</title>
+
+        
+    </head>
+
+    <body>
+      
+        <div id="borda">
+        <strong>Formulário de Pedido</strong>
+        <hr>
+        <form onsubmit="checar()" id="formped" name="formped" class="">
+            <fieldset>
+                <legend>Dados do Pedido</legend>
+                <table>
+             <tr>
+               <td>Nome Cliente:</td>
+               <td><input type="text" name="nome" id="nome" required placeholder="Insira seu nome"> 
+               <label id="erro">&nbsp;Algo escrito</label></td>
+             </tr>
+             <tr>
+              <td>Endereço: </td>
+              <td><input type="text" name="end" id="end" required placeholder="Endereço">
+              <label id="enderro">&nbsp;Algo escrito</label></td>
+            </tr>
+             <tr>
+                <td>Telefone: </td>
+                <td><input type="text" name="celular" id="celular" required placeholder="Telefone">
+                <label id="telerro">&nbsp;Algo escrito</label> </td>
+              </tr>   
+             
+             <tr>
+             <td>Data de Entrega:</td> 
+             <td><input type="date" name="data" required></td>
+             </tr>
+             <tr>
+                <td>Hora de Entrega:</td>
+                <td><input type="time" min="9:00" max="18:00" step="900" name="entrega" required></td>
+             </tr>
+                <tr>
+                    <td>Cidade </td>
+                    <td>
+                     <select> 
+                        <option> ------- </option>
+                        <option> Alvorada</option>
+                        <option> Canoas</option>
+                        <option> Cachoeirinha</option>
+                     </select>
+                     </td>
+                </tr>
+             <tr>
+               <td>Descrição:</td>
+               <td><textarea name="comentario" maxlength="3000"> </textarea></td>
+             </tr>
+             <tr>
+                 <td colspan="2"><fieldset>
+                 <legend>Forma de Entrega</legend>
+                 <input type="radio" name="optests" value="op1"> Entrega
+                  <input type="radio" name="optests" value="op1"> Motoboy
+                 <input type="radio" name="optests" value="op1"> Retira
+                </fieldset></td>
+             </tr>
+             </fieldset>
+             <tr>
+                 <td><input type="button" name="imp" onclick="checar()" value="Imprimir" ></td>
+                  <td><input type="button" name="limpar" onclick="limparcampos()" value="Limpar"></td>
+                 </tr>
+           
+             </table>        
+         
+                
+             
+        </form>
+    </div>
+    
+    </body>
+
+
+
+</html>

@@ -1,0 +1,32 @@
+P {
+            
+    font-size:40; 
+    color:crimson; 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    margin: 90px;
+    
+
+}
+body{
+   
+   background-repeat: no-repeat;
+   background-image: url('http://maispratidev.alfamidia.com.br/arquivos/arquivos/75_maisprati.jpg');
+}
+div 
+{
+   width: 400px;
+   height: 300px;
+   border: solid 5px;
+   position: absolute;
+   background-color: white;
+   overflow: auto;
+   left:400px;
+   margin-top: 10px;
+   display: block;
+}    
+meucomponente{
+   font-size: 35px;
+   position: relative;
+   background-color: fuchsia;
+}    

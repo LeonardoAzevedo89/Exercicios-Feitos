@@ -1,0 +1,60 @@
+P {
+            
+    font-size:40px; 
+    color:crimson; 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    margin: 90px;
+    
+
+}
+body{
+   
+   background-repeat: no-repeat;
+   background-image: url('http://maispratidev.alfamidia.com.br/arquivos/arquivos/75_maisprati.jpg');
+}
+div {
+   width: 580px; 
+   height: 600px;
+   border: solid 5px;
+   position: absolute;
+   background-color: white;
+   overflow: auto;
+   left:400px;
+   margin-top: 10px;
+   display: block;
+}
+strong{
+   margin-right: 80px;
+   margin-left: 80px;
+   font-size:30px;
+}
+textarea{
+   margin: 0px; 
+   width: 378px; 
+   height: 107px;
+   
+}
+input{
+   padding-inline-start: 10px;
+}
+
+#borda
+{
+   border-top-right-radius:20px; 
+   border-top-left-radius:20px; 
+   border-bottom-left-radius:120px; 
+   border-bottom-right-radius:120px;  
+   box-shadow: 10px 10px 10px 10px black;
+   
+}
+#nome, #end{
+   width: 400px;
+}
+
+#enderro,#telerro, #erro {
+   display:none;
+   color:red;
+   font-size: 12px;
+   font-weight: bold;
+}

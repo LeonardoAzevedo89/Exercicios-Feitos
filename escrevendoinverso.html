@@ -1,0 +1,27 @@
+<script> 
+    var numeros = [];
+    var i = 0;
+    var entrada;
+
+    do
+    {
+      entrada = (parseInt(prompt("Entre com um numero e (-1 para sair)")));
+      if(entrada >= 0) 
+      numeros[i++] = entrada;
+    } while(entrada >= 0);
+
+var resultado;
+var total = i;
+i=0;
+
+while(numeros.length > i){ /*percorrendo o array*/
+    x = total ;    
+    resultado = resultado + numeros[i];
+    i++;
+    if (i < total){
+      resultado = resultado + ",";
+    }    
+}
+resultado = "Numeros Escritos na ordem Inversa " + numeros.reverse();
+alert(resultado);
+</script>

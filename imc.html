@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<script>
+    var peso = prompt("Entre com o peso em Kg");
+    var altura = prompt("Entre com a altura");
+    var imc = peso / (altura * altura);
+    alert("Seu imc é " + imc);
+  
+
+    if(imc < 18.5)
+        alert(imc + "abaixo do peso");
+        else if (imc <= 24.9) alert (imc + " Peso Normal");
+    else if (imc <= 29.9) alert (imc + " Sobrepeso");
+    else if (imc <= 34.9) alert (imc + " Obesidade1");
+    else if ( imc <= 39.9) alert (imc + " Obesidade2");
+    else alert (imc + " Obesidade3");
+
+</script>
+
+
+
+</html>

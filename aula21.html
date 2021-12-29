@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="aula2.js"></script>
+	<title>Aula HTML/JS/CSS</title>
+
+</head>
+
+<body>
+<div class="Divcentral">
+	<center>
+<form>
+	<table>
+  <tbody>
+    <tr>
+      <td colspan="3">&nbsp;Adivinhe a senha!</td>      
+    </tr>
+    <tr>
+        <td colspan="3" ></td>      
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="num1" id="num1">
+        <input type="hidden" name="num11" id="num11" value="5">
+      </td>
+      <td>
+        <input type="text" name="num2" id="num2">		
+        <input type="hidden" name="num22" id="num22" value="5">
+	  </td>
+      <td>
+        <input type="text" name="num3" id="num3">		
+        <input type="hidden" name="num33" id="num33" value="5">
+	  </td>
+    </tr>
+    <tr>
+        <td colspan="3" ></td>      
+    </tr>
+    <tr>
+      <td colspan="3" align="right">
+		  <input type="button" name="limpar" onclick="Limparcampos()" id="limpar" value="Limpar">
+		  <input type="button"  name="ok" onclick="verificarsenha()" id="ok" value="Tentar">		
+	  </td>
+      
+    </tr>
+  </tbody>
+</table>
+	</form>
+	
+	<br>
+		<div id="Resultado">
+		
+		</div>
+	
+	</center>
+	
+	</div>
+ <script>
+   iniciarjogo();
+ </script>
+</body>
+</html>
